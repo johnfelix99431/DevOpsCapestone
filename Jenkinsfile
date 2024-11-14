@@ -6,7 +6,8 @@ pipeline{
         script {
           echo 'Building the project'
           bat 'mvn clean package'
-        }   
+        }
+      }   
     }
      stage("Test"){
        steps {
@@ -14,7 +15,6 @@ pipeline{
            echo 'Testing the project'
            bat 'test'
          }
-          
        }
     }
      stage("Server"){
