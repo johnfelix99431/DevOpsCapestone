@@ -13,7 +13,7 @@ pipeline{
        steps {
          script {
            echo 'Testing the project'
-           bat 'test'
+           bat 'mvn test'
          }
        }
     }
